@@ -1,11 +1,12 @@
 import math
+import numpy as np
 
-x = [0.25,0.2,0.15,0.12,0.1,0.08,0.05,0.05]
-total = 0
-for i in x:
-    total += -1*i*math.log2(i)
-y =[]
-for i in x:
-    y.append(-math.log2(i))
-print(total)
-print(y)
+n = 0
+t = 2500000
+r = 100000
+while t <5000000:
+    t = t + (r*0.9+((r*0.9)/(5*55)))
+    print(t)
+
+    n+=1
+print(n)
